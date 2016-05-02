@@ -15,10 +15,16 @@
 		0AD20A8F1CD705160066FE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20A8D1CD705160066FE3D /* LaunchScreen.storyboard */; };
 		0AD20A9A1CD705160066FE3D /* FavorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20A991CD705160066FE3D /* FavorTests.swift */; };
 		0AD20AA51CD705160066FE3D /* FavorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AA41CD705160066FE3D /* FavorUITests.swift */; };
-		0AD20AB91CD705490066FE3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */; };
-		0AD20ABA1CD705490066FE3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */; };
-		0AD20ABB1CD705490066FE3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */; };
 		0AD20ABD1CD71D230066FE3D /* CreateFavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */; };
+		0AD20ABF1CD71D500066FE3D /* ListingFavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ABE1CD71D500066FE3D /* ListingFavorViewController.swift */; };
+		0AD20ACE1CD729820066FE3D /* Contacts-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20ACD1CD729820066FE3D /* Contacts-500.png */; };
+		0AD20AD01CD72AB90066FE3D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */; };
+		0AD20AD21CD72B160066FE3D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AD11CD72B160066FE3D /* User.swift */; };
+		0AD20AD41CD72B4C0066FE3D /* Favor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AD31CD72B4C0066FE3D /* Favor.swift */; };
+		0AD20AD61CD72B590066FE3D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AD51CD72B590066FE3D /* Transaction.swift */; };
+		0AD20ADA1CD72E330066FE3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */; };
+		0AD20ADB1CD72E330066FE3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */; };
+		0AD20ADC1CD72E330066FE3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +59,16 @@
 		0AD20AA01CD705160066FE3D /* FavorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD20AA41CD705160066FE3D /* FavorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorUITests.swift; sourceTree = "<group>"; };
 		0AD20AA61CD705160066FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFavorViewController.swift; sourceTree = "<group>"; };
+		0AD20ABE1CD71D500066FE3D /* ListingFavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingFavorViewController.swift; sourceTree = "<group>"; };
+		0AD20ACD1CD729820066FE3D /* Contacts-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-500.png"; sourceTree = "<group>"; };
+		0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		0AD20AD11CD72B160066FE3D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0AD20AD31CD72B4C0066FE3D /* Favor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favor.swift; sourceTree = "<group>"; };
+		0AD20AD51CD72B590066FE3D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD20ABA1CD705490066FE3D /* FBSDKLoginKit.framework in Frameworks */,
-				0AD20AB91CD705490066FE3D /* FBSDKCoreKit.framework in Frameworks */,
-				0AD20ABB1CD705490066FE3D /* FBSDKShareKit.framework in Frameworks */,
+				0AD20ADB1CD72E330066FE3D /* FBSDKLoginKit.framework in Frameworks */,
+				0AD20ADA1CD72E330066FE3D /* FBSDKCoreKit.framework in Frameworks */,
+				0AD20ADC1CD72E330066FE3D /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +158,8 @@
 			children = (
 				0AD20A831CD705160066FE3D /* LoginViewController.swift */,
 				0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */,
+				0AD20ABE1CD71D500066FE3D /* ListingFavorViewController.swift */,
+				0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -153,6 +167,8 @@
 		0AD20AB31CD7051E0066FE3D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0AD20AC01CD722320066FE3D /* Assets */,
+				0AD20A851CD705160066FE3D /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,7 +176,9 @@
 		0AD20AB41CD705200066FE3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0AD20A851CD705160066FE3D /* Main.storyboard */,
+				0AD20AD11CD72B160066FE3D /* User.swift */,
+				0AD20AD31CD72B4C0066FE3D /* Favor.swift */,
+				0AD20AD51CD72B590066FE3D /* Transaction.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -168,11 +186,19 @@
 		0AD20AB51CD705300066FE3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */,
-				0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */,
-				0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */,
+				0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */,
+				0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */,
+				0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AD20AC01CD722320066FE3D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0AD20ACD1CD729820066FE3D /* Contacts-500.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD20ACE1CD729820066FE3D /* Contacts-500.png in Resources */,
 				0AD20A8F1CD705160066FE3D /* LaunchScreen.storyboard in Resources */,
 				0AD20A8C1CD705160066FE3D /* Assets.xcassets in Resources */,
 				0AD20A871CD705160066FE3D /* Main.storyboard in Resources */,
@@ -310,9 +337,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD20A8A1CD705160066FE3D /* Favor.xcdatamodeld in Sources */,
+				0AD20ABF1CD71D500066FE3D /* ListingFavorViewController.swift in Sources */,
+				0AD20AD21CD72B160066FE3D /* User.swift in Sources */,
 				0AD20A841CD705160066FE3D /* LoginViewController.swift in Sources */,
+				0AD20AD41CD72B4C0066FE3D /* Favor.swift in Sources */,
 				0AD20A821CD705160066FE3D /* AppDelegate.swift in Sources */,
 				0AD20ABD1CD71D230066FE3D /* CreateFavorViewController.swift in Sources */,
+				0AD20AD01CD72AB90066FE3D /* PreferencesViewController.swift in Sources */,
+				0AD20AD61CD72B590066FE3D /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = /Users/kevin/Documents/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/kevin/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Favor",
+				);
 				INFOPLIST_FILE = Favor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchen.Favor;
@@ -464,7 +499,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = /Users/kevin/Documents/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/kevin/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Favor",
+				);
 				INFOPLIST_FILE = Favor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchen.Favor;
@@ -539,6 +577,7 @@
 				0AD20AAB1CD705160066FE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AD20AAC1CD705160066FE3D /* Build configuration list for PBXNativeTarget "FavorTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +586,7 @@
 				0AD20AAE1CD705160066FE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AD20AAF1CD705160066FE3D /* Build configuration list for PBXNativeTarget "FavorUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +595,7 @@
 				0AD20AB11CD705160066FE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

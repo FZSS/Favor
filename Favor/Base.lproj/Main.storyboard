@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="-573" y="-75"/>
         </scene>
-        <!--Item 2-->
+        <!--Settings-->
         <scene sceneID="hqA-eV-BeC">
             <objects>
                 <viewController id="9jM-Qd-QUb" sceneMemberID="viewController">
@@ -57,16 +57,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="RPo-iy-khH"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Contacts-500.png" id="RPo-iy-khH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPE-No-lzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="258"/>
+            <point key="canvasLocation" x="1022" y="374"/>
         </scene>
-        <!--Item 1-->
+        <!--Create Favor-->
         <scene sceneID="Q40-j8-iOH">
             <objects>
-                <viewController id="vpI-JO-nBH" sceneMemberID="viewController">
+                <viewController title="Create Favor" id="vpI-JO-nBH" customClass="CreateFavorViewController" customModule="Favor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hE6-rB-eB1"/>
                         <viewControllerLayoutGuide type="bottom" id="Tmg-GP-haf"/>
@@ -76,11 +76,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="rw3-hh-Cih"/>
+                    <tabBarItem key="tabBarItem" title="New Favor" id="rw3-hh-Cih"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmr-Us-0b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="-403"/>
+            <point key="canvasLocation" x="1022" y="-451"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Ji-Iz-ayx">
@@ -93,18 +93,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="vpI-JO-nBH" kind="relationship" relationship="viewControllers" id="LcN-jH-toy"/>
-                        <segue destination="9jM-Qd-QUb" kind="relationship" relationship="viewControllers" id="nOM-TX-sDx"/>
                         <segue destination="rG5-gf-UL1" kind="relationship" relationship="viewControllers" id="qcm-MK-iv7"/>
+                        <segue destination="9jM-Qd-QUb" kind="relationship" relationship="viewControllers" id="nOM-TX-sDx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qje-ld-36i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="-75"/>
+            <point key="canvasLocation" x="158" y="-67"/>
         </scene>
-        <!--View -->
+        <!--Listing Favors-->
         <scene sceneID="rZJ-yB-j2z">
             <objects>
-                <tableViewController title="View " id="rG5-gf-UL1" sceneMemberID="viewController">
+                <tableViewController id="rG5-gf-UL1" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tlo-KD-kku">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,12 +124,16 @@
                             <outlet property="delegate" destination="rG5-gf-UL1" id="4zm-gA-ZI3"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="V1b-fT-9rT"/>
+                    <tabBarItem key="tabBarItem" title="Listing Favors" image="Menu-50.png" id="V1b-fT-9rT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjb-gU-eeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="1146"/>
+            <point key="canvasLocation" x="1022" y="1146"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Contacts-500.png" width="31" height="31"/>
+        <image name="Menu-50.png" width="30" height="30"/>
+    </resources>
     <color key="tintColor" red="1" green="0.74292657634397541" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
