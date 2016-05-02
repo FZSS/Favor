@@ -15,6 +15,9 @@
 		0AD20A8F1CD705160066FE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20A8D1CD705160066FE3D /* LaunchScreen.storyboard */; };
 		0AD20A9A1CD705160066FE3D /* FavorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20A991CD705160066FE3D /* FavorTests.swift */; };
 		0AD20AA51CD705160066FE3D /* FavorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AA41CD705160066FE3D /* FavorUITests.swift */; };
+		0AD20AB91CD705490066FE3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */; };
+		0AD20ABA1CD705490066FE3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */; };
+		0AD20ABB1CD705490066FE3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		0AD20AA01CD705160066FE3D /* FavorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD20AA41CD705160066FE3D /* FavorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorUITests.swift; sourceTree = "<group>"; };
 		0AD20AA61CD705160066FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD20ABA1CD705490066FE3D /* FBSDKLoginKit.framework in Frameworks */,
+				0AD20AB91CD705490066FE3D /* FBSDKCoreKit.framework in Frameworks */,
+				0AD20ABB1CD705490066FE3D /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +108,11 @@
 		0AD20A801CD705160066FE3D /* Favor */ = {
 			isa = PBXGroup;
 			children = (
+				0AD20AB51CD705300066FE3D /* Frameworks */,
+				0AD20AB41CD705200066FE3D /* Model */,
+				0AD20AB31CD7051E0066FE3D /* View */,
+				0AD20AB21CD7051C0066FE3D /* Controller */,
 				0AD20A811CD705160066FE3D /* AppDelegate.swift */,
-				0AD20A831CD705160066FE3D /* ViewController.swift */,
-				0AD20A851CD705160066FE3D /* Main.storyboard */,
 				0AD20A8B1CD705160066FE3D /* Assets.xcassets */,
 				0AD20A8D1CD705160066FE3D /* LaunchScreen.storyboard */,
 				0AD20A901CD705160066FE3D /* Info.plist */,
@@ -126,6 +137,39 @@
 				0AD20AA61CD705160066FE3D /* Info.plist */,
 			);
 			path = FavorUITests;
+			sourceTree = "<group>";
+		};
+		0AD20AB21CD7051C0066FE3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AD20A831CD705160066FE3D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0AD20AB31CD7051E0066FE3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0AD20AB41CD705200066FE3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AD20A851CD705160066FE3D /* Main.storyboard */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0AD20AB51CD705300066FE3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD20AB61CD705490066FE3D /* FBSDKCoreKit.framework */,
+				0AD20AB71CD705490066FE3D /* FBSDKLoginKit.framework */,
+				0AD20AB81CD705490066FE3D /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/kevin/Documents/FacebookSDK;
 				INFOPLIST_FILE = Favor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchen.Favor;
@@ -415,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/kevin/Documents/FacebookSDK;
 				INFOPLIST_FILE = Favor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchen.Favor;
