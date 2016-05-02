@@ -1,15 +1,17 @@
 //
-//  ListingFavorViewController.swift
+//  FavorTabBarController.swift
 //  Favor
 //
-//  Created by Fangzhou Chen on 5/1/16.
+//  Created by Fangzhou Chen on 5/2/16.
 //  Copyright © 2016 Kevin Fangzhou Chen. All rights reserved.
 //
 
 import UIKit
 
-class ListingFavorViewController: UIViewController {
-
+class FavorTabBarController: UITabBarController {
+    var currentUser : User!
+    var favors : [Favor] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

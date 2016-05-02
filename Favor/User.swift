@@ -9,5 +9,10 @@
 import Foundation
 
 class User {
+    var myID : Int!
+    // init with Facebook
+    init(userID : Int) {
+        self.myID = userID
+    }
     
 }

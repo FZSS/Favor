@@ -12,7 +12,10 @@ import FBSDKLoginKit
 import Parse
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
-
+    
+    var currentUser : User!
+    var currentUserEmail : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let loginButton = FBSDKLoginButton()
@@ -30,14 +33,68 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             performSegueWithIdentifier("showMainApp", sender: self)
         }
     }
+    
+    func generateUser() {
+        if currentUser == nil {
+            //use fbsdk to get the email address, use parse to get the user
+        }
+    }
 
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if error != nil {
             print(error.localizedDescription)
             return
         }
+        //if first time logging in, add to database
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+            if (error == nil){
+                let resultDict = result as! NSMutableDictionary
+                // replace below with actually
+                self.currentUserEmail = self.getUserEmail(resultDict)
+                self.generateUserIfNeeded(self.currentUserEmail, FBAPIresult : resultDict)
+            } else {
+                print(error.localizedDescription)
+            }
+        })
+        
+        
         print("completed login!")
         performSegueWithIdentifier("showMainApp", sender: self)
+    }
+    
+    func getUserEmail(resultDict :NSMutableDictionary) -> String {
+        //replace with acutal fb api to get email
+        return "kevinchen1219@gmail.com"
+    }
+    
+    //
+    func generateUserIfNeeded(userEmail : String, FBAPIresult result: NSMutableDictionary) {
+        //Use fake data
+        let name = "Kevin Chen"
+        let userID = 123456789
+        // looks like bad query
+        let query = PFQuery(className: "Users")
+        query.whereKey("email", equalTo: userEmail)
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error != nil {
+                // this is not working
+                print("user does not exist")
+                let user = PFObject(className: "Users")
+                user.setObject(name, forKey: "name")
+                user.setObject(userEmail, forKey: "email")
+                user.setObject(userID, forKey: "facebook_id")
+                user.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+                    if succeeded {
+                        print("User Uploaded")
+                    } else {
+                        print("Error: \(error)")
+                    }
+                }
+
+            } else {
+                print("user already exists")
+            }
+        }
         
     }
     
@@ -46,6 +103,14 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
         return true
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showMainApp" {
+            let viewController = segue.destinationViewController as! FavorTabBarController
+            viewController.currentUser = self.currentUser
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+import Parse
 
 class CreateFavorViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
-    @IBOutlet var CategoryPickerPopupButton: UIButton!
+    
+    var newFavor : Favor!
+    var favorCategory : String = "Other"
+    var favorBounty : Int = 5
+    var favorContent : String!
+    var currentUser: User!
+    
     @IBOutlet var BountyAmountSlider: UISlider!
     @IBOutlet var BountyDisplayLabel: UILabel!
     @IBOutlet var CategoryPicker: UIPickerView!
@@ -22,8 +30,7 @@ class CreateFavorViewController: UIViewController, UIPickerViewDataSource, UIPic
         super.viewDidLoad()
         CategoryPicker.dataSource = self
         CategoryPicker.delegate = self
-
-        // Do any additional setup after loading the view.
+        // replace this with get favors
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,13 +52,35 @@ class CreateFavorViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let selected = CategoryPickerData[row]
+        favorCategory = selected
     }
     
-
-    func popUpPicker() {
-        
+    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let titleData = CategoryPickerData[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Helvetica Neue", size: 18.0)!,NSForegroundColorAttributeName:UIColor.orangeColor()])
+        return myTitle
+    }
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        let currentValue = Int(sender.value)
+        favorBounty = currentValue
+        BountyDisplayLabel.text = "I'll pay $\(currentValue)!"
     }
 
+    @IBAction func onConfirmedPressed(sender: UIButton) {
+//        let askerID = currentUser.myID
+        let askerID = 123123
+        favorContent = FavorContentTextView.text
+        newFavor = Favor(ownerID: askerID, content: favorContent, category: favorCategory, bounty: favorBounty)
+        let alertController = UIAlertController(title: "Successful!", message: "Your favor has been posted!", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        let favorTabBarController = self.tabBarController! as! FavorTabBarController
+        favorTabBarController.favors.append(newFavor)
+        favorTabBarController.selectedIndex = 1
+    }
+    
+    
     /*
     // MARK: - Navigation
 
