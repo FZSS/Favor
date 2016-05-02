@@ -12,7 +12,7 @@ import FBSDKLoginKit
 import Parse
 
 class CreateFavorViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
+
     var newFavor : Favor!
     var favorCategory : String = "Other"
     var favorBounty : Int = 5
@@ -72,11 +72,13 @@ class CreateFavorViewController: UIViewController, UIPickerViewDataSource, UIPic
         let askerID = 123123
         favorContent = FavorContentTextView.text
         newFavor = Favor(ownerID: askerID, content: favorContent, category: favorCategory, bounty: favorBounty)
+        let favorTabBarController = self.tabBarController! as! FavorTabBarController
+        let listingView = favorTabBarController.viewControllers![1] as! ListingFavorTableViewController
+        listingView.favors.append(newFavor)
+        
         let alertController = UIAlertController(title: "Successful!", message: "Your favor has been posted!", preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
-        let favorTabBarController = self.tabBarController! as! FavorTabBarController
-        favorTabBarController.favors.append(newFavor)
         favorTabBarController.selectedIndex = 1
     }
     

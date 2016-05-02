@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Foundation
 
 class ProfileViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

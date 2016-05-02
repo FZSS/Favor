@@ -10,6 +10,11 @@ import UIKit
 
 class FavorTableViewCell: UITableViewCell {
 
+    @IBOutlet var TypeLabel: UILabel!
+    @IBOutlet var BountyLabel: UILabel!
+    @IBOutlet var FavorContentLabel: UILabel!
+    @IBOutlet var AcceptButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

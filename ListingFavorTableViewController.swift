@@ -9,7 +9,8 @@
 import UIKit
 
 class ListingFavorTableViewController: UITableViewController {
-
+    var favors : [Favor] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,11 @@ class ListingFavorTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        print("Favor size:\(favors.count)")
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -27,16 +33,19 @@ class ListingFavorTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("FavorCell", forIndexPath: indexPath) as! FavorTableViewCell
+        cell.TypeLabel.text = "Type: " + favors[indexPath.row].category
+        cell.BountyLabel.text = "\(favors[indexPath.row].bounty)$"
+        cell.FavorContentLabel.text = favors[indexPath.row].content
+        return cell
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return favors.count
     }
-
+    
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

@@ -44,12 +44,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-573" y="-75"/>
+            <point key="canvasLocation" x="-713" y="187"/>
         </scene>
         <!--Profile-->
         <scene sceneID="hqA-eV-BeC">
             <objects>
-                <viewController id="9jM-Qd-QUb" sceneMemberID="viewController">
+                <viewController id="9jM-Qd-QUb" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ga3-qi-2db"/>
                         <viewControllerLayoutGuide type="bottom" id="6EB-Y0-eSn"/>
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPE-No-lzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="274"/>
+            <point key="canvasLocation" x="1246" y="290"/>
         </scene>
         <!--Create Favor-->
         <scene sceneID="Q40-j8-iOH">
@@ -238,30 +238,11 @@
                         <outlet property="CategoryPicker" destination="Vwg-uw-XKH" id="9Ua-qo-9zb"/>
                         <outlet property="FavorConfirmButton" destination="ySr-N0-JoN" id="LSx-zP-pWK"/>
                         <outlet property="FavorContentTextView" destination="073-cE-CLn" id="JeH-Cb-8DE"/>
-                        <segue destination="sZe-0p-2as" kind="presentation" identifier="abcd" id="W4m-yN-eDE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmr-Us-0b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="890" y="-543"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="c2u-Wf-4oR">
-            <objects>
-                <viewController id="sZe-0p-2as" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="89f-uJ-hTP"/>
-                        <viewControllerLayoutGuide type="bottom" id="hJe-lA-KvI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OTc-B7-8qe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGB-bW-kGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1627" y="-543"/>
         </scene>
         <!--Favor Tab Bar Controller-->
         <scene sceneID="7Ji-Iz-ayx">
@@ -274,30 +255,60 @@
                     </tabBar>
                     <connections>
                         <segue destination="vpI-JO-nBH" kind="relationship" relationship="viewControllers" id="LcN-jH-toy"/>
-                        <segue destination="rG5-gf-UL1" kind="relationship" relationship="viewControllers" id="qcm-MK-iv7"/>
+                        <segue destination="rG5-gf-UL1" kind="relationship" relationship="viewControllers" id="XwA-AL-gWG"/>
                         <segue destination="9jM-Qd-QUb" kind="relationship" relationship="viewControllers" id="nOM-TX-sDx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qje-ld-36i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="-75"/>
+            <point key="canvasLocation" x="92" y="187"/>
         </scene>
         <!--Listing Favors-->
         <scene sceneID="rZJ-yB-j2z">
             <objects>
-                <tableViewController id="rG5-gf-UL1" customClass="ListingFavorsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tlo-KD-kku">
+                <tableViewController id="rG5-gf-UL1" customClass="ListingFavorTableViewController" customModule="Favor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="28" sectionFooterHeight="28" id="tlo-KD-kku">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pDI-Yj-LwH">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavorCell" rowHeight="145" id="pDI-Yj-LwH" customClass="FavorTableViewCell" customModule="Favor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pDI-Yj-LwH" id="gdt-cu-nhv">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="144.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnO-7b-HBB">
+                                            <rect key="frame" x="316" y="79" width="44" height="30"/>
+                                            <state key="normal" title="DO IT!"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssp-UR-CeL">
+                                            <rect key="frame" x="231" y="8" width="352" height="82"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bounty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8I-wO-UJx">
+                                            <rect key="frame" x="16" y="83" width="127" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIy-1v-ata">
+                                            <rect key="frame" x="16" y="38" width="121" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AcceptButton" destination="mnO-7b-HBB" id="VxJ-EX-ITz"/>
+                                    <outlet property="BountyLabel" destination="w8I-wO-UJx" id="9Wy-Aa-5bZ"/>
+                                    <outlet property="FavorContentLabel" destination="ssp-UR-CeL" id="88Q-8o-yfV"/>
+                                    <outlet property="TypeLabel" destination="oIy-1v-ata" id="JG5-Lb-vwG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -309,7 +320,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjb-gU-eeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="1146"/>
+            <point key="canvasLocation" x="624" y="1082"/>
         </scene>
     </scenes>
     <resources>

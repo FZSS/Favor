@@ -16,7 +16,6 @@
 		0AD20A9A1CD705160066FE3D /* FavorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20A991CD705160066FE3D /* FavorTests.swift */; };
 		0AD20AA51CD705160066FE3D /* FavorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AA41CD705160066FE3D /* FavorUITests.swift */; };
 		0AD20ABD1CD71D230066FE3D /* CreateFavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */; };
-		0AD20ABF1CD71D500066FE3D /* ListingFavorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ABE1CD71D500066FE3D /* ListingFavorsViewController.swift */; };
 		0AD20ACE1CD729820066FE3D /* Contacts-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20ACD1CD729820066FE3D /* Contacts-500.png */; };
 		0AD20AD01CD72AB90066FE3D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */; };
 		0AD20AD21CD72B160066FE3D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AD11CD72B160066FE3D /* User.swift */; };
@@ -39,6 +38,9 @@
 		0AD20AF41CD736070066FE3D /* List-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20AF31CD736070066FE3D /* List-100.png */; };
 		0AD20AF61CD736490066FE3D /* Plus-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20AF51CD736490066FE3D /* Plus-100.png */; };
 		0AD20AF81CD751E70066FE3D /* FavorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AF71CD751E70066FE3D /* FavorTabBarController.swift */; };
+		0AD20AFA1CD766910066FE3D /* ListingFavorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AF91CD766910066FE3D /* ListingFavorTableViewController.swift */; };
+		0AD20AFC1CD767570066FE3D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AFB1CD767570066FE3D /* ProfileViewController.swift */; };
+		0AD20AFE1CD76A390066FE3D /* FavorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD20AFD1CD76A390066FE3D /* FavorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +76,6 @@
 		0AD20AA41CD705160066FE3D /* FavorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorUITests.swift; sourceTree = "<group>"; };
 		0AD20AA61CD705160066FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFavorViewController.swift; sourceTree = "<group>"; };
-		0AD20ABE1CD71D500066FE3D /* ListingFavorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingFavorsViewController.swift; sourceTree = "<group>"; };
 		0AD20ACD1CD729820066FE3D /* Contacts-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-500.png"; sourceTree = "<group>"; };
 		0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		0AD20AD11CD72B160066FE3D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -97,6 +98,9 @@
 		0AD20AF31CD736070066FE3D /* List-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List-100.png"; sourceTree = "<group>"; };
 		0AD20AF51CD736490066FE3D /* Plus-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plus-100.png"; sourceTree = "<group>"; };
 		0AD20AF71CD751E70066FE3D /* FavorTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavorTabBarController.swift; sourceTree = "<group>"; };
+		0AD20AF91CD766910066FE3D /* ListingFavorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListingFavorTableViewController.swift; path = ../ListingFavorTableViewController.swift; sourceTree = "<group>"; };
+		0AD20AFB1CD767570066FE3D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0AD20AFD1CD76A390066FE3D /* FavorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,6 @@
 				0AD20AB21CD7051C0066FE3D /* Controller */,
 				0AD20A811CD705160066FE3D /* AppDelegate.swift */,
 				0AD20A8B1CD705160066FE3D /* Assets.xcassets */,
-				0AD20A8D1CD705160066FE3D /* LaunchScreen.storyboard */,
 				0AD20A901CD705160066FE3D /* Info.plist */,
 				0AD20A881CD705160066FE3D /* Favor.xcdatamodeld */,
 			);
@@ -197,9 +200,10 @@
 		0AD20AB21CD7051C0066FE3D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0AD20AF91CD766910066FE3D /* ListingFavorTableViewController.swift */,
 				0AD20A831CD705160066FE3D /* LoginViewController.swift */,
+				0AD20AFB1CD767570066FE3D /* ProfileViewController.swift */,
 				0AD20ABC1CD71D230066FE3D /* CreateFavorViewController.swift */,
-				0AD20ABE1CD71D500066FE3D /* ListingFavorsViewController.swift */,
 				0AD20ACF1CD72AB90066FE3D /* PreferencesViewController.swift */,
 				0AD20AF71CD751E70066FE3D /* FavorTabBarController.swift */,
 			);
@@ -211,6 +215,8 @@
 			children = (
 				0AD20AC01CD722320066FE3D /* Assets */,
 				0AD20A851CD705160066FE3D /* Main.storyboard */,
+				0AD20AFD1CD76A390066FE3D /* FavorTableViewCell.swift */,
+				0AD20A8D1CD705160066FE3D /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -392,12 +398,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD20A8A1CD705160066FE3D /* Favor.xcdatamodeld in Sources */,
-				0AD20ABF1CD71D500066FE3D /* ListingFavorsViewController.swift in Sources */,
+				0AD20AFA1CD766910066FE3D /* ListingFavorTableViewController.swift in Sources */,
 				0AD20AF81CD751E70066FE3D /* FavorTabBarController.swift in Sources */,
 				0AD20AD21CD72B160066FE3D /* User.swift in Sources */,
 				0AD20A841CD705160066FE3D /* LoginViewController.swift in Sources */,
 				0AD20AD41CD72B4C0066FE3D /* Favor.swift in Sources */,
+				0AD20AFC1CD767570066FE3D /* ProfileViewController.swift in Sources */,
 				0AD20A821CD705160066FE3D /* AppDelegate.swift in Sources */,
+				0AD20AFE1CD76A390066FE3D /* FavorTableViewCell.swift in Sources */,
 				0AD20ABD1CD71D230066FE3D /* CreateFavorViewController.swift in Sources */,
 				0AD20AD01CD72AB90066FE3D /* PreferencesViewController.swift in Sources */,
 				0AD20AD61CD72B590066FE3D /* Transaction.swift in Sources */,
