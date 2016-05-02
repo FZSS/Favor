@@ -25,6 +25,19 @@
 		0AD20ADA1CD72E330066FE3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */; };
 		0AD20ADB1CD72E330066FE3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */; };
 		0AD20ADC1CD72E330066FE3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */; };
+		0AD20ADF1CD72F5F0066FE3D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20ADD1CD72F5F0066FE3D /* Bolts.framework */; };
+		0AD20AE01CD72F5F0066FE3D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20ADE1CD72F5F0066FE3D /* Parse.framework */; };
+		0AD20AE81CD72FC70066FE3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE11CD72FC60066FE3D /* AudioToolbox.framework */; };
+		0AD20AE91CD72FC70066FE3D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE21CD72FC70066FE3D /* CFNetwork.framework */; };
+		0AD20AEA1CD72FC70066FE3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE31CD72FC70066FE3D /* CoreGraphics.framework */; };
+		0AD20AEB1CD72FC70066FE3D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE41CD72FC70066FE3D /* QuartzCore.framework */; };
+		0AD20AEC1CD72FC70066FE3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE51CD72FC70066FE3D /* Security.framework */; };
+		0AD20AED1CD72FC70066FE3D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE61CD72FC70066FE3D /* StoreKit.framework */; };
+		0AD20AEE1CD72FC70066FE3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AE71CD72FC70066FE3D /* SystemConfiguration.framework */; };
+		0AD20AF01CD72FD20066FE3D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AEF1CD72FD20066FE3D /* libz.tbd */; };
+		0AD20AF21CD72FE80066FE3D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD20AF11CD72FE80066FE3D /* libsqlite3.tbd */; };
+		0AD20AF41CD736070066FE3D /* List-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20AF31CD736070066FE3D /* List-100.png */; };
+		0AD20AF61CD736490066FE3D /* Plus-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AD20AF51CD736490066FE3D /* Plus-100.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +82,19 @@
 		0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		0AD20ADD1CD72F5F0066FE3D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0AD20ADE1CD72F5F0066FE3D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0AD20AE11CD72FC60066FE3D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0AD20AE21CD72FC70066FE3D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0AD20AE31CD72FC70066FE3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AD20AE41CD72FC70066FE3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0AD20AE51CD72FC70066FE3D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0AD20AE61CD72FC70066FE3D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0AD20AE71CD72FC70066FE3D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AD20AEF1CD72FD20066FE3D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0AD20AF11CD72FE80066FE3D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0AD20AF31CD736070066FE3D /* List-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "List-100.png"; sourceTree = "<group>"; };
+		0AD20AF51CD736490066FE3D /* Plus-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plus-100.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD20AF21CD72FE80066FE3D /* libsqlite3.tbd in Frameworks */,
+				0AD20AF01CD72FD20066FE3D /* libz.tbd in Frameworks */,
+				0AD20AE81CD72FC70066FE3D /* AudioToolbox.framework in Frameworks */,
+				0AD20AE91CD72FC70066FE3D /* CFNetwork.framework in Frameworks */,
+				0AD20AEA1CD72FC70066FE3D /* CoreGraphics.framework in Frameworks */,
+				0AD20AEB1CD72FC70066FE3D /* QuartzCore.framework in Frameworks */,
+				0AD20AEC1CD72FC70066FE3D /* Security.framework in Frameworks */,
+				0AD20AED1CD72FC70066FE3D /* StoreKit.framework in Frameworks */,
+				0AD20AEE1CD72FC70066FE3D /* SystemConfiguration.framework in Frameworks */,
 				0AD20ADB1CD72E330066FE3D /* FBSDKLoginKit.framework in Frameworks */,
 				0AD20ADA1CD72E330066FE3D /* FBSDKCoreKit.framework in Frameworks */,
 				0AD20ADC1CD72E330066FE3D /* FBSDKShareKit.framework in Frameworks */,
+				0AD20ADF1CD72F5F0066FE3D /* Bolts.framework in Frameworks */,
+				0AD20AE01CD72F5F0066FE3D /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +139,8 @@
 		0AD20A751CD705160066FE3D = {
 			isa = PBXGroup;
 			children = (
+				0AD20AF11CD72FE80066FE3D /* libsqlite3.tbd */,
+				0AD20AEF1CD72FD20066FE3D /* libz.tbd */,
 				0AD20A801CD705160066FE3D /* Favor */,
 				0AD20A981CD705160066FE3D /* FavorTests */,
 				0AD20AA31CD705160066FE3D /* FavorUITests */,
@@ -186,6 +225,15 @@
 		0AD20AB51CD705300066FE3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AD20AE11CD72FC60066FE3D /* AudioToolbox.framework */,
+				0AD20AE21CD72FC70066FE3D /* CFNetwork.framework */,
+				0AD20AE31CD72FC70066FE3D /* CoreGraphics.framework */,
+				0AD20AE41CD72FC70066FE3D /* QuartzCore.framework */,
+				0AD20AE51CD72FC70066FE3D /* Security.framework */,
+				0AD20AE61CD72FC70066FE3D /* StoreKit.framework */,
+				0AD20AE71CD72FC70066FE3D /* SystemConfiguration.framework */,
+				0AD20ADD1CD72F5F0066FE3D /* Bolts.framework */,
+				0AD20ADE1CD72F5F0066FE3D /* Parse.framework */,
 				0AD20AD71CD72E330066FE3D /* FBSDKCoreKit.framework */,
 				0AD20AD81CD72E330066FE3D /* FBSDKLoginKit.framework */,
 				0AD20AD91CD72E330066FE3D /* FBSDKShareKit.framework */,
@@ -196,7 +244,9 @@
 		0AD20AC01CD722320066FE3D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0AD20AF31CD736070066FE3D /* List-100.png */,
 				0AD20ACD1CD729820066FE3D /* Contacts-500.png */,
+				0AD20AF51CD736490066FE3D /* Plus-100.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -309,6 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD20ACE1CD729820066FE3D /* Contacts-500.png in Resources */,
+				0AD20AF61CD736490066FE3D /* Plus-100.png in Resources */,
+				0AD20AF41CD736070066FE3D /* List-100.png in Resources */,
 				0AD20A8F1CD705160066FE3D /* LaunchScreen.storyboard in Resources */,
 				0AD20A8C1CD705160066FE3D /* Assets.xcassets in Resources */,
 				0AD20A871CD705160066FE3D /* Main.storyboard in Resources */,

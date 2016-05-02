@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import FBSDKLoginKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "CuXkz5Evb6JbKu73I7KaovvHyEb06yOGvVkbeifw"
+            $0.clientKey = "mHbuW73g9D9mA9WhZZeyElbswEEgUqVqHctZ4G0E"
+        }
+        Parse.initializeWithConfiguration(configuration)
         return true
     }
     
