@@ -1,7 +1,7 @@
 
 #Favor
 ## Author
-* Kevin Fangzhou Chen
+Kevin Fangzhou Chen
 
 ## Presentation Link
 [Youtube](https://www.youtube.com/watch?v=5z8cA8CfL6Q)
